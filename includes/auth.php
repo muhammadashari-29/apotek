@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 function cekLogin()
 {
 	if (!isset($_SESSION['user.id'])) {
-		header('Location: /apotek/auth/login.php');
+		header('Location:/auth/login.php');
 		exit;
 	}
 }
@@ -14,7 +14,7 @@ function cekLogin()
 function cekAdmin()
 {
 	if (($_SESSION['role'] ?? '') !== 'admin') {
-		header('Location: /apotek/index.php?error=akses_ditolak');
+		header('Location:/index.php?error=akses_ditolak');
 		exit;
 	}
 }

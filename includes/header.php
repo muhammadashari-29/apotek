@@ -6,14 +6,14 @@
 	<title><?= $pageTitle ?? 'Sistem Apotek' ?></title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="/apotek/assets/style.css">
+	<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body class="bg-light">
 
 <?php if (isset($_SESSION['user_id'])): ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
 	<div class="container">
-		<a class="navbar-brand fw-bold" href="/apotek/index.php">
+		<a class="navbar-brand fw-bold" href="/index.php">
 			<i class="bi bi-capsule-fill"></i> Apotek Sehat
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
@@ -22,17 +22,17 @@
 		<div class="collapse navbar-collapse" id="navMain">
 			<ul class="navbar-nav me-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="/apotek/index.php"><i class="bi bi-speedometer2"></i> Dashboard</a>
+					<a class="nav-link" href="/index.php"><i class="bi bi-speedometer2"></i> Dashboard</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/apotek/obat/index.php"><i class="bi bi-capsule"></i> Data Obat</a>
+					<a class="nav-link" href="/obat/index.php"><i class="bi bi-capsule"></i> Data Obat</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/apotek/kategori/index.php"><i class="bi bi-tags"></i> Kategori</a>
+					<a class="nav-link" href="/kategori/index.php"><i class="bi bi-tags"></i> Kategori</a>
 				</li>
 				<?php if (($_SESSION['role'] ?? '') === 'admin'): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="/apotek/user/index.php"><i class="bi bi-people"></i> Data User</a>
+                    <a class="nav-link" href="/user/index.php"><i class="bi bi-people"></i> Data User</a>
                 </li>
 				<?php endif; ?>
 			</ul>
@@ -41,7 +41,7 @@
 				<?= htmlspecialchars($_SESSION['username']) ?>
 				<span class="badge-bg-light text-primary text-uppercase ms-1"><?= htmlspecialchars($_SESSION['role']) ?></span>
 			</span>
-			<a href="/apotek/auth/logout.php" class="btn btn-outline-light btn-sm">
+			<a href="auth/logout.php" class="btn btn-outline-light btn-sm">
 				<i class="bi bi-box-arrow-right"></i> Keluar
 			</a>
 		</div>
