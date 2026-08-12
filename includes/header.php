@@ -11,7 +11,7 @@
 <body class="bg-light">
 
 <?php if (isset($_SESSION['user_id'])): ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
 	<div class="container">
 		<a class="navbar-brand fw-bold" href="/index.php">
 			<i class="bi bi-capsule-fill"></i> Apotek Sehat
@@ -37,11 +37,10 @@
 				<?php endif; ?>
 			</ul>
 			<span class="navbar-text text-white me-3">
-				<i class=bi "bi-person-circle"></i>
+				<i class="bi bi-person-circle"></i>
 				<?= htmlspecialchars($_SESSION['username']) ?>
-				<span class="badge-bg-light text-primary text-uppercase ms-1"><?= htmlspecialchars($_SESSION['role']) ?></span>
 			</span>
-			<a href="/auth/logout.php" class="btn btn-outline-light btn-sm">
+			<a href="/auth/logout.php" class="btn btn-outline-danger btn-sm">
 				<i class="bi bi-box-arrow-right"></i> Keluar
 			</a>
 		</div>
