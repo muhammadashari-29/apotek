@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 function cekLogin()
 {
-	if (!isset($_SESSION['user.id'])) {
+	if (!isset($_SESSION['user_id'])) {
 		header('Location:/auth/login.php');
 		exit;
 	}
