@@ -40,7 +40,7 @@ require_once __DIR__ . '/../includes/header.php';
 		<div class="mb-3">
 			<label class="form-label">Nama Kategori</label>
 			<input type="text" name="nama" class="form-control"
-				value=<?= htmlspecialchars($_POST['nama'] ?? '') ?>">
+				value="<?= htmlspecialchars($_POST['nama'] ?? '') ?>">
 		</div>
 		<div class="mb-3">
             <label class="form-label">Status</label>
