@@ -14,7 +14,7 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="d-flex justify-content-between align-items-center mb-3">
-	<h3 class="mb-0"><i class="bi bi-capsule"></i>Data Obat</h3>
+	<h3 class="mb-0"><i class="bi bi-capsule"></i> Data Obat</h3>
 	<a href="tambah.php" class="btn btn-primary">
 		<i class="bi bi-plus-lg"></i> Tambah Obat
 	</a>
@@ -39,14 +39,14 @@ require_once __DIR__ . '/../includes/header.php';
 					<th>Status</th>
 					<th class="text-end">Aksi</th>
 				</tr>
-			</thead> 
+			</thead>
 			<tbody>
 				<?php if (empty($obat)): ?>
 					<tr><td colspan="6" class="text-center text-muted py-4">Belum ada data obat.</td></tr>
 				<?php else: foreach ($obat as $i => $o): ?>
 					<tr>
 						<td><?= $i + 1?></td>
-						<td><span class="font-monospace"><?= htmlspecialchars($o['kode_obat']) ?></span></td>
+						<td><span class="font-monospace"><?= htmlspecialchars($o['kode']) ?></span></td>
 						<td><?= htmlspecialchars($o['nama_obat']) ?></td>
 						<td><span class="badge bg-secondary"><?= htmlspecialchars($o['nama_kategori']) ?></span></td>
 						<td>
@@ -60,7 +60,7 @@ require_once __DIR__ . '/../includes/header.php';
 							</a>
 							<a href="hapus.php?id=<?= $o['id'] ?>" class="btn btn-sm btn-outline-danger"
 								onclick="return confirm('Yakin ingin menghapus obat ini?');">
-									<i class="bi bi-trash"></i>Hapus
+									<i class="bi bi-trash"></i> Hapus
 							</a>
 						</td>
 					</tr>
