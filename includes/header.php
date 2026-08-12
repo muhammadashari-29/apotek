@@ -41,7 +41,7 @@
 				<?= htmlspecialchars($_SESSION['username']) ?>
 				<span class="badge-bg-light text-primary text-uppercase ms-1"><?= htmlspecialchars($_SESSION['role']) ?></span>
 			</span>
-			<a href="auth/logout.php" class="btn btn-outline-light btn-sm">
+			<a href="/auth/logout.php" class="btn btn-outline-light btn-sm">
 				<i class="bi bi-box-arrow-right"></i> Keluar
 			</a>
 		</div>
