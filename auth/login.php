@@ -44,13 +44,13 @@ $pageTitle = 'Login - Sistem Apotek';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
-<body>
-<div class="login-wrapper">
+<body class="login-page">
+<div>
     <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
         <div class="card-body">
             <div class="text-center mb-4">
                 <i class="bi bi-capsule-fill text-primary" style="font-size: 2.5rem;"></i>
-                <h4 class="mt-2 fw-bold">Sistem Apotek</h4>
+                <h4 class="mt-2 fw-bold"><i class="bi bi-heart-pulse-fill"></i> Sistem Apotek</h4>
                 <p class="text-muted small">Silakan login untuk melanjutkan</p>
             </div>
 
